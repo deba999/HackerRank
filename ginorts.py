@@ -12,6 +12,7 @@ Sorting1234 -->  ginortS1324
 
 s=list(input())
 
-s.sort(key=lambda x:( x.isdigit()and int(x)%2==0,x.isdigit(),x.isupper(),x) )
+s.sort(key=lambda x:( x.isdigit(),x.isupper(),x in '02468',x) )
 
 print(''.join(s))
+
